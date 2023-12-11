@@ -18,7 +18,7 @@ except mysql.connector.Error as err:
     print(f"Erreur de connexion à la base de données: {err}")
 
 api_base_url = 'http://54.37.12.181:1337/api/sneakers'
-total_pages = 1969
+total_pages = 49214
 
 for page in range(1, total_pages + 1):
     api_url = f'{api_base_url}?pagination[page]={page}'
